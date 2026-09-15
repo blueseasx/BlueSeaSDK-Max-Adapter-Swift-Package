@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.7.1"
+            exact: "1.9.0"
         ),
         .package(
             url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", 
@@ -44,8 +44,8 @@ let package = Package(
             ),
             .binaryTarget(
                 name: "BlueSeaMaxAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.7.1/2026090900/adapter-V1.7.1.0/BlueSeaMaxAdapter.xcframework.zip",
-                checksum: "e3d5a9aea7fceca4bcece45f4859e0d0bae39ff406917eb10203c40f5973018e"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaMaxAdapter.xcframework.zip",
+                checksum: "30f84a30165d71ed6286c84449973aedb400f37de2a3eb7ab07646328baf4c0e"
             ),
         ]
 )
