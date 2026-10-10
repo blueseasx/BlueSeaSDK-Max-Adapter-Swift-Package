@@ -11,8 +11,9 @@ The BlueSea iOS Adapter for AppLovin MAX Mediation, distributed via Swift Packag
    ```
    https://github.com/blueseasx/BlueSeaSDK-Max-Adapter-Swift-Package
    ```
-3. Select **Exact Version** and enter the encoded version (e.g. `1090000.0.0` for adapter version `1.9.0.0`).
+3. Select **Exact Version** and enter the encoded version (e.g. `1090100.0.0` for adapter version `1.9.1.0`).
 4. Add the `BlueSeaMaxAdapter` product to your app target.
+5. Enable the `-ObjC` flag in Xcode: click on your project settings, go to **Build Settings**, search for **Other Linker Flags** and add `-ObjC`.
 
 ### Package.swift
 
@@ -20,7 +21,7 @@ The BlueSea iOS Adapter for AppLovin MAX Mediation, distributed via Swift Packag
 dependencies: [
     .package(
         url: "https://github.com/blueseasx/BlueSeaSDK-Max-Adapter-Swift-Package.git",
-        exact: "1090000.0.0"
+        exact: "1090100.0.0"
     )
 ]
 ```
@@ -28,4 +29,4 @@ dependencies: [
 ## Included dependencies
 
 - [`BlueSeaSDK`](https://github.com/blueseasx/BlueSeaSDK-Swift-Package) (pinned to the version certified for this adapter release)
-- [`AppLovinSDK`](https://github.com/AppLovin/AppLovin-MAX-Swift-Package) (>= 13.6.3)
+- [`AppLovinSDK`](https://github.com/AppLovin/AppLovin-MAX-Swift-Package) (>= 13.2.0)

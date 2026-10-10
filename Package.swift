@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -18,11 +18,11 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.9.0"
+            exact: "1.9.1"
         ),
         .package(
             url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", 
-            from: "13.6.3"
+            from: "13.2.0"
         ),
 
     ],
@@ -35,17 +35,12 @@ let package = Package(
                     .product(name: "BlueSeaSDK", package: "BlueSeaSDK-Swift-Package"),
                     .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
                 ],
-                path: "Sources",
-                linkerSettings: [
-                    // NOTE: Swift Package Manager currently does not allow dependencies with unsafeFlags, unless a specific branch/commit is used.
-                    // For now, these flags should be added manually to the project for integration.
-                    .unsafeFlags(["-ObjC"])
-                ]
+                path: "Sources"
             ),
             .binaryTarget(
                 name: "BlueSeaMaxAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaMaxAdapter.xcframework.zip",
-                checksum: "30f84a30165d71ed6286c84449973aedb400f37de2a3eb7ab07646328baf4c0e"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.1/2026101000/adapter-V1.9.1.0/BlueSeaMaxAdapter.xcframework.zip",
+                checksum: "6ca600ce77162231596af571dafa328eb2c7b01ee2647527a1d17ced12bb70d8"
             ),
         ]
 )
